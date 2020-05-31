@@ -14,7 +14,7 @@ Adicione os código im importe o [Jar](https://github.com/BrunoMoraes-Z/JPicPay/
  JPicPay api = new JPicPay();
  ```
  #### Criar Pagamento 
- Para criar um pagamento precisa de.
+ Para criar uma venda precisa de.
   - Objeto `consumidor` do tipo `Buyer`
   - `referenceCode` - código para o picpay identifar o pedido.
   - `value` - valor do pedido.
@@ -36,7 +36,7 @@ Adicione os código im importe o [Jar](https://github.com/BrunoMoraes-Z/JPicPay/
 
  JSONObject paymentReponse = api.createPayment(referenceCode, 55.20, expire, consumidor);
  ```
- #### Resposta com sucesso ao criar um pagamento.
+ #### Resposta com sucesso ao criar uma Venda.
  
  ```json
  {
@@ -53,8 +53,8 @@ Adicione os código im importe o [Jar](https://github.com/BrunoMoraes-Z/JPicPay/
  }
  ```
  
- #### Criar Pagamento
- Basta informar o código de referencia que foi utilizado para criar o pagamento.
+ #### Verificar Status
+ Basta informar o código de referencia que foi utilizado para criar a Venda.
  
  ```java
  JSONObject statusResponse = api.getPaymentStatus(referenceCode);
@@ -73,8 +73,8 @@ Adicione os código im importe o [Jar](https://github.com/BrunoMoraes-Z/JPicPay/
  }
  ```
  
- #### Cancelar Compra
- Obrigátoriamente deve informar novamente o código de referencia que foi utilizado para criar o pagamento.
+ #### Cancelar Venda
+ Obrigátoriamente deve informar novamente o código de referencia que foi utilizado para criar a venda.
  caso o venda ja esteja paga deve informar o `authorizationId` retornado pelo Status.
  
  ```java
