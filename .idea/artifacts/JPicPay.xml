@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JPicPay">
+    <output-path>$PROJECT_DIR$/out/artifacts/JPicPay</output-path>
+    <root id="archive" name="JPicPay.jar">
+      <element id="module-output" name="JPicPay" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20190722/json-20190722.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
