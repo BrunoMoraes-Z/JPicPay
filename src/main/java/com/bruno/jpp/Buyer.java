@@ -8,6 +8,8 @@ public class Buyer {
     private String email;
     private String contact;
 
+    public Buyer() {}
+
     public Buyer(String firstName, String lastName, String cpf, String email, String contact) {
         this.firstName = firstName;
         this.lastName = lastName;
