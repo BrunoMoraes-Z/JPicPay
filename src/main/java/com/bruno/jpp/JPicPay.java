@@ -18,7 +18,7 @@ public class JPicPay {
     private String callback = "https://localhost/callback";
     private String urlReturn = "https://localhost/pedido/";
 
-    public Object createPayment(String paymentCode, double value, Date expire, Buyer buyer) {
+    public JSONObject createPayment(String paymentCode, double value, Date expire, Buyer buyer) {
 
         JSONObject payment = new JSONObject();
         payment.put("referenceId", paymentCode);
@@ -35,13 +35,7 @@ public class JPicPay {
         buyero.put("phone", buyer.getContact());
         payment.put("buyer", buyero);
 
-        JSONObject response = execute(Method.POST, true, endPoint("/payments"), payment);
-
-        if (response.get("statusCode").equals(200)) {
-            return new Payment(response);
-        }
-
-        return response;
+        return execute(Method.POST, true, endPoint("/payments"), payment);
     }
 
     public JSONObject getPaymentStatus(String paymentCode) {
