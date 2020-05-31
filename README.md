@@ -13,7 +13,7 @@ Adicione os código im importe o [Jar](https://github.com/BrunoMoraes-Z/JPicPay/
  ```java
  JPicPay api = new JPicPay();
  ```
- #### Criar Pagamento 
+ #### Criar Venda 
  Para criar uma venda precisa de.
   - Objeto `consumidor` do tipo `Buyer`
   - `referenceCode` - código para o picpay identifar o pedido.
