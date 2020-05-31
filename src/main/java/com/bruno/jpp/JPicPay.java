@@ -106,7 +106,7 @@ public class JPicPay {
         return response;
     }
 
-    public String endPoint(String endpoint, String... args) {
+    private String endPoint(String endpoint, String... args) {
         return base_url + (args == null || args.length == 0 ? endpoint : String.format(endpoint, args));
     }
 
