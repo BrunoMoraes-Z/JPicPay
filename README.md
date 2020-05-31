@@ -1,9 +1,7 @@
 <h1 align="center">
     <img alt="PicPay" width="200px" src="https://www.picpay.com/static/images/new/home/ppay-icon.png">
-</h1>
-
-<h1 align="center">
-JPicPay
+    <br />
+    JPicPay
 </h1>
 
 ## Como Utilizar
